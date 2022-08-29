@@ -1,0 +1,92 @@
+main{
+  width: 700px;
+}
+.compartment {
+  position: absolute;
+  bottom: 0px;
+  background-color: #011b2b;
+  height: 35px;
+  font-size: 12px;
+  color: black;
+  width: 30%;
+}
+.elevator {
+ 
+    position: relative;
+    margin: 0 8px;
+    background-color: #b1e2ff;
+    width: 10px;
+    height: 700px;
+    top: 0px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.compartment > div {
+    position: relative;
+    top: -340px;
+}
+.compartment > div > div {
+    position: relative;
+    height: 35px;
+}
+
+#upDownButtons {
+    position: relative;
+    height: 700px;
+    padding: 0;
+    margin: 0;
+}
+.floor-buttons {
+    height: 35px;
+    display:flex;
+    align-items:center;
+}
+.button {
+    border: none;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    background-color: #afadd6;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: #b1e2ff;
+}
+.button > .upSide {
+	height: 0; 
+	border-left: 8.5px solid transparent;
+	border-right: 8.5px solid transparent;	
+	border-bottom: 9px solid #ffffff;
+}
+
+.button > .downSide {
+	height: 0; 
+	border-left: 8.5px solid transparent;
+	border-right: 8.5px solid transparent;	
+	border-top: 9px solid white;
+  cursor: pointer;
+}
+
+#floor-buttons-1 button.button.downSide {
+  display: none;
+}
+
+#floor-buttons-20 button.button.upSide {
+  display: none;
+}
+
+.floor-number-container {
+   height: 30px;
+    width: 25px;
+    background-color: #26253d;
+    margin-right: 10px;
+}
+
+.floor-number-label {
+  color: rgb(255, 255, 255);
+}
+
+
